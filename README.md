@@ -20,6 +20,8 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 - ### Bloxstrap
   #### This is a custom community made Bootstrapper made by [pizzaboxer](https://www.github.com/pizzaboxer). You can get it [here](https://bloxstrap.pizzaboxer.xyz).
 
+---
+
 ### <a id="requirements"></a> :white_check_mark: - Requirements
 
 * Newest [Python](https://www.python.org)
