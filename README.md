@@ -1,4 +1,4 @@
-# <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.3
+# <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.4
 
 MultiBlox is an open source software written in Python that lets you run multiple instances of Roblox.  
 I have decided to make this after pizzaboxer removed multi instance launching from Bloxstrap, originally not planning to make it public.  
