@@ -1,14 +1,14 @@
-# MultiBlox v1.0
+# MultiBlox v1.0.0
 
-MultiBlox is a program written in Python that lets you run multiple instances of Roblox.
+MultiBlox is an open source software written in Python that lets you run multiple instances of Roblox.  
+I have decided to make this after pizzaboxer removed multi instance launching from Bloxstrap, originally not planning to make it public.  
 
 Compatible with Windows 10/11, untested on MacOS/Linux.
 
 ## :large_blue_circle: - Content
 - [Supported Bootstrappers](#bootstrapper)
-- [:white_check_mark: - Requirements](#requirements)
-- [:hammer: - Installing](#installing)
 - [:toolbox: - Usage](#usage)
+- [FAQ](#faq)
 - [:wave: - Authors](#authors)
 - [:exclamation: - License](#license)
 
@@ -22,31 +22,26 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 
 ---
 
-### <a id="requirements"></a> :white_check_mark: - Requirements
-
-* Newest [Python](https://www.python.org)
-* The latest release of [MultiBlox](https://github.com/DraxFM/MultiBlox/releases/latest/download/MultiBlox.zip)
-
----
-
-### <a id="installing"></a> :hammer: - Installing
-
-1. Install [Python](https://www.python.org)
-2. Tick "**Add python.exe to PATH**" in the Python Installer Setup!
-3. Install the latest release of [MultiBlox](https://github.com/DraxFM/MultiBlox/releases/latest/download/MultiBlox.zip)
-4. Extract the .zip file in the desired directory.
-5. Run the **MultiBlox.py** file.
-6. Enjoy!
-
----
-
 ### <a id="usage"></a> :toolbox: - Usage
 
-1. Open **MultiBlox**
-2. Make sure to go into settings and select your desired Roblox Bootstrapper!
-3. Only then press "**Toggle MultiBlox**"
-4. A Roblox Instance will launch, wait 5 seconds each time(!) before launching another Roblox Instance via the "**Start Roblox Instance**" button!
-5. The program will do the rest
+1. Install the [latest release](https://github.com/DraxFM/MultiBlox/releases/latest)
+2. Extract the .zip folder
+3. Run **MultiBlox.exe**
+4. Make sure to go into settings and select your desired Roblox Bootstrapper!
+5. Only then press "**Toggle MultiBlox**"
+6. The program will do the rest
+
+---
+
+### <a id="faq"></a> FAQ
+#### How does it work?  
+Roblox mobilises **handles** to ensure that it only runs once. It creates this handle upon running Roblox.  
+MultiBlox will close all current Roblox processes, it will then run a thread that will create a handle to a **mutex**. It will "inherit" the handle that Roblox will try to create when launching, but it won't be able to as it can't access a foreign thread and just     close this mutex. You will be able to open as many Roblox instances as you want, just remember that they take up RAM so your PC will get slower per Roblox Instance.
+
+---
+
+#### Can I get banned for using this?
+In terms of getting banned by Roblox Anti-Cheat you will not get banned. This software does not inject into Roblox, it does not touch Roblox's internals in any way. Though, always remember to follow the rules of the different Roblox Experiences. Some Experiences do not allow Alt farming etc. which is made possible with this software. If someone catches you alt farming or abusing this software in a way that it breaks rules, you have the chance of getting banned from this experience. I am not liable for what YOU do with this software!
 
 ---
 
