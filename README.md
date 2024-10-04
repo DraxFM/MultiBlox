@@ -18,7 +18,7 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 - ### Roblox Default Bootstrapper
   #### This is the default Roblox Bootstrapper that gets installed when obtaining Roblox through its [official](https://www.roblox.com/download) website.
 - ### Bloxstrap
-  #### This is a custom community made Bootstrapper made by [pizzaboxer](https://www.github.com/pizzaboxer). You can get it [here](https://bloxstrap.pizzaboxer.xyz).
+  #### This is a custom community made Bootstrapper made by [pizzaboxer](https://www.github.com/pizzaboxer). You can get it [here](https://bloxstraplabs.com).
 
 ---
 
