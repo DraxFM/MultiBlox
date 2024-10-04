@@ -39,6 +39,8 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 
 ### <a id="usage2"></a> Read before Using
 
+Do you get the popup "Windows Defender SmartScreen prevented an unrecognized app from starting"? Read the [respective FAQ article](#faq) for more information.
+
 Usually MultiBlox automatically closes any Roblox instance when toggling the feature, but in any case it doesn't just close all Roblox applications manually.
 You can use "Start Roblox Instance" if you want but you can also just launch from your Start Menu or via your browser.
 "Kill Roblox Instances" is not particularly for MultiBlox, as MultiBlox won't freeze or slow Roblox down, I just find it useful when running into problems and as I use MultiBlox myself it's there.
@@ -46,9 +48,13 @@ You can use "Start Roblox Instance" if you want but you can also just launch fro
 ---
 
 ### <a id="faq"></a> FAQ
-#### How does it work?  
-Roblox mobilises **handles** to ensure that it only runs once. It creates this handle upon running Roblox.  
-MultiBlox will close all current Roblox processes, it will then run a thread that will create a handle to a **mutex**. It will "inherit" the handle that Roblox will try to create when launching, but it won't be able to as it can't access a foreign thread and just     close this mutex. You will be able to open as many Roblox instances as you want, just remember that they take up RAM so your PC will get slower per Roblox Instance.
+#### Windows Defender SmartScreen prevented an unrecognized app from starting
+This has a very high chance of happening. This does not happen because Windows Defender thinks that the file is a virus, this happens because I do not have a signing certificate. I could self-sign but this will not mitigate the popup. The only way to properly remove the popup is by obtaining either an EV or OV certificate. EV certs base out at 500$ - 700$ a year while OV certs are cheaper at 100$ - 500$ a year. Well of course I can't afford this. The only other way to remove the popup is by gaining reputation by people installing and running the software. This can take months and requires thousands of users to run the application. The whole process is reset when updating the application to a new version. I'll likely never be able to remove this.
+
+---
+
+#### How can I trust MultiBlox?
+It's open source. That means you can read the raw code I wrote to make this. You could even run the raw python file but this would require you to install several libraries and Python itself. MultiBlox is packaged using vanilla pyinstaller with **noconsole, onefile, icon** args. You can decompile MultiBlox, it is not obfuscated.
 
 ---
 
@@ -57,8 +63,9 @@ In terms of getting banned by Roblox Anti-Cheat you will not get banned. This so
 
 ---
 
-#### How can I trust MultiBlox?
-It's open source. That means you can read the raw code I wrote to make this. You could even run the raw python file but this would require you to install several libraries and Python itself. MultiBlox is packaged using vanilla pyinstaller with **noconsole, onefile, icon** args. You can decompile MultiBlox, it is not obfuscated.
+#### How does it work?  
+Roblox mobilises **handles** to ensure that it only runs once. It creates this handle upon running Roblox.  
+MultiBlox will close all current Roblox processes, it will then run a thread that will create a handle to a **mutex**. It will "inherit" the handle that Roblox will try to create when launching, but it won't be able to as it can't access a foreign thread and just     close this mutex. You will be able to open as many Roblox instances as you want, just remember that they take up RAM so your PC will get slower per Roblox Instance.
 
 ---
 
