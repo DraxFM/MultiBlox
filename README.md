@@ -1,4 +1,4 @@
-# <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.1
+# <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.3
 
 MultiBlox is an open source software written in Python that lets you run multiple instances of Roblox.  
 I have decided to make this after pizzaboxer removed multi instance launching from Bloxstrap, originally not planning to make it public.  
@@ -11,6 +11,7 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 ## :large_blue_circle: - Content
 - [Supported Bootstrappers](#bootstrapper)
 - [:toolbox: - Usage](#usage)
+- [Read before Using](#usage2)
 - [FAQ](#faq)
 - [:wave: - Authors](#authors)
 - [:exclamation: - License](#license)
@@ -36,6 +37,14 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 
 ---
 
+### <a id="usage2"></a> Read before Using
+
+Usually MultiBlox automatically closes any Roblox instance when toggling the feature, but in any case it doesn't just close all Roblox applications manually.
+You can use "Start Roblox Instance" if you want but you can also just launch from your Start Menu or via your browser.
+"Kill Roblox Instances" is not particularly for MultiBlox, as MultiBlox won't freeze or slow Roblox down, I just find it useful when running into problems and as I use MultiBlox myself it's there.
+
+---
+
 ### <a id="faq"></a> FAQ
 #### How does it work?  
 Roblox mobilises **handles** to ensure that it only runs once. It creates this handle upon running Roblox.  
@@ -45,6 +54,11 @@ MultiBlox will close all current Roblox processes, it will then run a thread tha
 
 #### Can I get banned for using this?
 In terms of getting banned by Roblox Anti-Cheat you will not get banned. This software does not inject into Roblox, it does not touch Roblox's internals in any way. Though, always remember to follow the rules of the different Roblox Experiences. Some Experiences do not allow Alt farming etc. which is made possible with this software. If someone catches you alt farming or abusing this software in a way that it breaks rules, you have the chance of getting banned from this experience. I am not liable for what YOU do with this software!
+
+---
+
+#### How can I trust MultiBlox?
+It's open source. That means you can read the raw code I wrote to make this. You could even run the raw python file but this would require you to install several libraries and Python itself. MultiBlox is packaged using vanilla pyinstaller with **noconsole, onefile, icon** args. You can decompile MultiBlox, it is not obfuscated.
 
 ---
 
