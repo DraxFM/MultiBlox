@@ -22,6 +22,7 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 ---
 
 ### <a id="bootstrapper"></a> Supported Bootstrappers
+You only need to select the Bootstrapper if you want to use the "Start Roblox Instance" button. You can also just toggle and launch both from your Start Menu and multi instancing will apply automatically.
 - ### Roblox Default Bootstrapper
   #### This is the default Roblox Bootstrapper that gets installed when obtaining Roblox through its [official](https://www.roblox.com/download) website.
 - ### Bloxstrap
@@ -34,9 +35,8 @@ Compatible with Windows 10/11, untested on MacOS/Linux.
 1. Install the [latest release](https://github.com/DraxFM/MultiBlox/releases/latest)
 2. Extract the .zip folder
 3. Run **MultiBlox.exe**
-4. Make sure to go into settings and select your desired Roblox Bootstrapper!
-5. Only then press "**Toggle MultiBlox**"
-6. The program will do the rest
+4. Only then press "**Toggle MultiBlox**"
+5. The program will do the rest
 
 ---
 
