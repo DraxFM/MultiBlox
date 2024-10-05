@@ -1,3 +1,6 @@
+> [!CAUTION]
+> The only other official source to get MultiBlox from is [vercel-multiblox.vercel.app](https://vercel-multiblox.vercel.app)!
+
 # <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.4
 
 MultiBlox is an open source software written in Python that lets you run multiple instances of Roblox.  
