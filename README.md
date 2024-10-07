@@ -33,10 +33,11 @@ You only need to select the Bootstrapper if you want to use the "Start Roblox In
 ### <a id="usage"></a> :toolbox: - Usage
 
 1. Install the [latest release](https://github.com/DraxFM/MultiBlox/releases/latest)
-2. Extract the .zip folder
-3. Run **MultiBlox.exe**
-4. Press "**Toggle MultiBlox**"
-5. The program will do the rest
+2. Run **MultiBloxInstaller.exe**
+3. Follow the installation steps
+4. Launch "**MultiBlox.exe**"
+5. Press "**Toggle MultiBlox**"
+6. The program will do the rest
 
 ---
 
