@@ -5,7 +5,6 @@
 # Changing this code and/or distributing modified versions of this code/software is not permitted!
 # For further details on the licensing and usage of subcomponents, please refer to the "LICENSE" file contained in this Repository.
 
-
 import tkinter
 import time
 import ctypes
@@ -22,7 +21,7 @@ from tkinter import ttk
 from pystray import MenuItem as item, Icon
 from PIL import Image
 
-version = "v1.0.4"
+version = "v1.0.6"
 status = 0
 
 terminate_thread = False
@@ -31,6 +30,13 @@ CONFIG_FILE = "./assets/config.json"
 
 def check_integrity():
         required_files = {"./assets/icon.ico"}
+
+        fn = os.path.basename(sys.argv[0])
+        if fn == "MultiBlox.exe" or fn == "MultiBlox.py":
+            print("good")
+        else:
+            tkinter.messagebox.showerror(title="MultiBlox Internal Error", message="File was altered and blocked for usage!")
+            sys.exit()
 
         for file in required_files:
             if not os.path.isfile(file):
@@ -274,6 +280,9 @@ def main_func():
         status = 0
         main_l1_var.set("Status: Offline")
     elif status == 0:
+        while getRobloxInstance() == True:
+            time.sleep(0.1)
+            forceKillRoblox()
         global thread
         if thread == None:
             thread = threading.Thread(target=mutex_thread)
