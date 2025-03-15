@@ -1,5 +1,5 @@
 > [!CAUTION]
-> The only other official source to get MultiBlox from is [vercel-multiblox.vercel.app](https://vercel-multiblox.vercel.app)!
+> The only other official source to get MultiBlox from is [multiblox.vercel.app](https://multiblox.vercel.app) or [vercel-multiblox.vercel.app](https://vercel-multiblox.vercel.app)!
 
 # <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.6
 
