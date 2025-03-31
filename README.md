@@ -1,6 +1,9 @@
 > [!CAUTION]
 > The only other official source to get MultiBlox from is [multiblox.vercel.app](https://multiblox.vercel.app) or [vercel-multiblox.vercel.app](https://vercel-multiblox.vercel.app)!
 
+> [!NOTE]
+> With the newest Bloxstrap version (2.9.0), multi-instance launching has returned as a feature, making this software obsolete. You are better off using the official integrated Bloxtsrap multi-instance method and do not need this software as of right now. The future of this project is put on hold for now. It will remain here for learning purposes and incase multi-instancing gets removed again. So long!
+
 # <img src="https://github.com/DraxFM/MultiBlox/raw/main/md/icon.png" width="48"/> MultiBlox v1.0.6
 
 MultiBlox is an open source software written in Python that lets you run multiple instances of Roblox.  
